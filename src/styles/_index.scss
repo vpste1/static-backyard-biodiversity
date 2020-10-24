@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css?family=Work+Sans&display=swap");
+
+@import "./theme";
+@import "./reset";
+@import "./buttons";
+@import "./breakpoints";
+
+body {
+  font-size: 12px;
+  margin: 0;
+  font-weight: 400;
+  color: $fontGrey;
+  background-color: white;
+  font-family: "Work Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  text-decoration: none;
+  &:visited {
+    color: black;
+  }
+  &:hover {
+    text-decoration: none;
+    color: $bbRed;
+  }
+}
+
+// Remove IE11's clear and show-password from input fields
+input[type="text"]::-ms-clear,
+input[type="password"]::-ms-reveal {
+  display: none;
+}
+.inner-wrapper {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1.2em;
+}

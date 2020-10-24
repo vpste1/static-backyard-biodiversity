@@ -1,0 +1,29 @@
+html {
+  // font-size: $fontSizeBase;
+  word-spacing: 1px;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  box-sizing: border-box;
+  // font-family: $fontFamilyBase;
+}
+
+html,
+body,
+#root {
+  min-height: 100vh;
+}
+
+// input,
+// textarea,
+// select,
+// button {
+//   font-family: $fontFamilyBase;
+// }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}

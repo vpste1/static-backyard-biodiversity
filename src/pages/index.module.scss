@@ -1,0 +1,119 @@
+@import "../styles/index";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.imgSmall,
+.imgLarge {
+  margin: 1em auto 1em;
+}
+
+.imgSmall {
+  width: 25em;
+}
+
+.heroBar {
+  width: 100%;
+  background-color: $lightBackground;
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.18);
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+
+  p {
+    margin-top: 1em;
+    max-width: 40em;
+  }
+}
+
+.textBox {
+  padding: 5em 1em;
+  background-color: $lightBackground;
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.18);
+
+  h2 {
+    font-size: 2.2em;
+    margin: 0 0 2em;
+  }
+}
+
+.definition {
+  font-size: 1.2em;
+  margin: 0 auto 2em;
+  padding: 1em;
+  max-width: 35em;
+
+  .italicised {
+    display: block;
+    font-style: italic;
+  }
+
+  .numberedItem {
+    position: relative;
+    padding-left: 1em;
+    display: block;
+    span {
+      position: relative;
+    }
+    &::before {
+      position: absolute;
+      content: "1. ";
+      left: 0px;
+    }
+  }
+}
+
+h1 {
+  text-align: center;
+  font-size: 4em;
+  margin: 1em 0 1em;
+}
+
+p {
+  font-size: 1.5em;
+}
+
+@media (max-width: $widthTablet) {
+  h1 {
+    font-size: 3em;
+    margin: 0.5em 0 0.5em;
+  }
+
+  .body {
+    font-size: 0.8em;
+  }
+
+  .textBox {
+    padding: 3em 1em;
+
+    h2 {
+      margin: 0 0 1em;
+    }
+  }
+
+  .definition {
+    h2 {
+      font-size: 1.5em;
+    }
+    font-size: 1em;
+    max-width: 35em;
+  }
+  .imgLarge,
+  .imgSmall {
+    margin: 0 auto;
+  }
+  .imgLarge {
+    width: 30em;
+  }
+  .imgSmall {
+    width: 20em;
+  }
+}
